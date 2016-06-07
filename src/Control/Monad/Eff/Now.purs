@@ -1,4 +1,4 @@
-module Control.Moand.Eff.Now where
+module Control.Monad.Eff.Now where
 
 import Control.Monad.Eff (Eff)
 import Data.DateTime.Instant (Instant)
