@@ -9,7 +9,7 @@ module Control.Monad.Eff.Now
 
 import Prelude
 
-import Control.Monad.Eff (Eff)
+import Control.Monad.Eff (kind Effect, Eff)
 
 import Data.DateTime (time, date)
 import Data.DateTime.Instant (Instant, toDateTime)
@@ -18,7 +18,7 @@ import Data.Maybe (Maybe(..))
 import Data.Time.Duration (Minutes)
 
 -- | Effect type for when accessing the current date/time.
-foreign import data NOW :: !
+foreign import data NOW :: Effect
 
 -- | Gets an `Instant` value for the date and time according to the current
 -- | machine’s clock.
