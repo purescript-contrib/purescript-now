@@ -1,11 +1,11 @@
 {
   "name": "purescript-now",
-  "homepage": "https://github.com/purescript/purescript-now",
+  "homepage": "https://github.com/purescript-contrib/purescript-now",
   "description": "PureScript library for reading the current date and time value",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript/purescript-now.git"
+    "url": "git://github.com/purescript-contrib/purescript-now.git"
   },
   "ignore": [
     "**/.*",
