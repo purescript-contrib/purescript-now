@@ -16,7 +16,7 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-eff": "^3.0.0",
-    "purescript-datetime": "^3.0.0"
+    "purescript-effect": "#compiler/0.12",
+    "purescript-datetime": "#compiler/0.12"
   }
 }
