@@ -3,11 +3,13 @@ module Effect.Now
   , nowDateTime
   , nowDate
   , nowTime
+  , getTimezoneOffset
   ) where
 
 import Prelude
 
 import Data.DateTime (Date, DateTime, Time, date, time)
+import Data.Time.Component (Minute)
 import Data.DateTime.Instant (Instant, toDateTime)
 import Effect (Effect)
 
@@ -27,3 +29,6 @@ nowDate = date <<< toDateTime <$> now
 -- | Gets the time according to the current machine’s clock.
 nowTime :: Effect Time
 nowTime = time <<< toDateTime <$> now
+
+-- | Gets the time zone difference, in minutes, from current locale (host system settings) to UTC
+foreign import getTimezoneOffset :: Instant -> Effect Minute
