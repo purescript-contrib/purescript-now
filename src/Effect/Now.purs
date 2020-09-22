@@ -9,7 +9,7 @@ module Effect.Now
 import Prelude
 
 import Data.DateTime (Date, DateTime, Time, date, time)
-import Data.Time.Component (Minute)
+import Data.Time.Duration (Minute)
 import Data.DateTime.Instant (Instant, toDateTime)
 import Effect (Effect)
 
