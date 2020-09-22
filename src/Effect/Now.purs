@@ -30,5 +30,5 @@ nowDate = date <<< toDateTime <$> now
 nowTime :: Effect Time
 nowTime = time <<< toDateTime <$> now
 
--- | Gets the time zone difference, in minutes, from current locale (host system settings) to UTC
-foreign import getTimezoneOffset :: Instant -> Effect Minute
+-- | Gets the time zone difference, in minutes, from current local (host system settings) to UTC using `now`.
+foreign import getTimezoneOffset :: Effect Minute
