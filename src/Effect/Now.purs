@@ -9,7 +9,7 @@ module Effect.Now
 import Prelude
 
 import Data.DateTime (Date, DateTime, Time, date, time)
-import Data.Time.Duration (Minute)
+import Data.Time.Duration (Minutes)
 import Data.DateTime.Instant (Instant, toDateTime)
 import Effect (Effect)
 
@@ -31,4 +31,4 @@ nowTime :: Effect Time
 nowTime = time <<< toDateTime <$> now
 
 -- | Gets the time zone difference, in minutes, from current local (host system settings) to UTC using `now`.
-foreign import getTimezoneOffset :: Effect Minute
+foreign import getTimezoneOffset :: Effect Minutes
