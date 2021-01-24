@@ -5,16 +5,20 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes (😱!!!):
+- Added support for PureScript 0.14 and dropped support for all previous versions (#17)
 
 New features:
+- Added `getTimezoneOffset` (#13 by @cmdv)
 
 Bugfixes:
 
 Other improvements:
+- Changed default branch to `main` from `master`
+- Updated to comply with Contributors library guidelines by adding new issue and pull request templates, updating documentation, and migrating to Spago for local development and CI (#14 by @maxdeviant)
 
 ## [v4.0.0](https://github.com/purescript-contrib/purescript-now/releases/tag/v4.0.0) - 2018-05-25
 
-Updated for PureScript 0.12
+- Updated for PureScript 0.12
 
 ## [v3.0.0](https://github.com/purescript-contrib/purescript-now/releases/tag/v3.0.0) - 2017-04-03
 
@@ -26,5 +30,4 @@ Updated for PureScript 0.12
 
 ## [v1.0.0](https://github.com/purescript-contrib/purescript-now/releases/tag/v1.0.0) - 2016-06-09
 
-Initial release.
-
+- Initial release.
