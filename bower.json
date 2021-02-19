@@ -16,7 +16,10 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-effect": "master",
-    "purescript-datetime": "master"
+    "purescript-datetime": "^5.0.0",
+    "purescript-effect": "^3.0.0"
+  },
+  "devDependencies": {
+    "purescript-console": "^5.0.0"
   }
 }
