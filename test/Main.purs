@@ -7,7 +7,7 @@ import Control.Monad.State (StateT, execStateT, lift, modify)
 import Data.Either (Either(..))
 import Data.Time.Duration (Minutes(..))
 import Effect (Effect)
-import Effect.Class.Console (error, errorShow, log)
+import Effect.Class.Console (log, logShow)
 import Effect.Exception (throw)
 import Effect.Now (getTimezoneOffset, now, nowDate, nowTime)
 import Node.Process (exit)
@@ -21,8 +21,8 @@ test name body =
   try (lift body) >>= case _ of
     Right _ -> log ("✔️  " <> name)
     Left err -> do 
-      error ("❌  " <> name)
-      errorShow err
+      log ("❌  " <> name)
+      logShow err
       void $ modify (_ + 1)
 
 assertDoesNotThrow :: ∀ a. Effect a -> Effect Unit
