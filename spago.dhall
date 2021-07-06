@@ -4,7 +4,10 @@
   , "console"
   , "datetime"
   , "effect"
+  , "either"
+  , "exceptions"
   , "node-process"
+  , "prelude"
   , "psci-support"
   , "transformers"
   ]
