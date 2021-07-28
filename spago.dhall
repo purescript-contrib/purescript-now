@@ -1,5 +1,16 @@
 { name = "now"
-, dependencies = [ "console", "datetime", "effect", "psci-support" ]
+, dependencies =
+  [ "assert"
+  , "console"
+  , "datetime"
+  , "effect"
+  , "either"
+  , "exceptions"
+  , "node-process"
+  , "prelude"
+  , "psci-support"
+  , "transformers"
+  ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
 }
