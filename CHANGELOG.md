@@ -11,7 +11,8 @@ New features:
 Bugfixes:
 
 Other improvements:
-- Added tests (#20 by @ntwilson) 
+- Added tests (#20 by @ntwilson)
+- Added quick start (#22 by @maxdeviant)
 
 ## [v5.0.0](https://github.com/purescript-contrib/purescript-now/releases/tag/v5.0.0) - 2021-02-26
 
