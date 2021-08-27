@@ -18,7 +18,43 @@ spago install now
 
 ## Quick start
 
-The quick start hasn't been written yet (contributions are welcome!). The quick start covers a common, minimal use case for the library, whereas longer examples and tutorials are kept in the [docs directory](./docs).
+The functions provided by `now` can be used to get the current date and time from the current machine's system clock.
+
+Here are two example functions that print out the current year and time:
+
+```purs
+import Prelude
+import Data.DateTime
+import Data.Enum
+import Effect
+import Effect.Console
+import Effect.Now
+
+printCurrentYear :: Effect Unit
+printCurrentYear = do
+  currentDate <- nowDate
+  let
+    currentYear = fromEnum $ year currentDate :: Int
+  log $ "The current year is " <> show currentYear
+
+printCurrentTime :: Effect Unit
+printCurrentTime = do
+  currentTime <- nowTime
+  let
+    currentHour = fromEnum $ hour currentTime :: Int
+    currentMinute = fromEnum $ minute currentTime :: Int
+  log $ "The current time is " <> show currentHour <> ":" <> show currentMinute
+```
+
+We can then try these functions out in a REPL:
+
+```
+> printCurrentYear
+The current year is 2021
+
+> printCurrentTime
+The current time is 1:54
+```
 
 ## Documentation
 
