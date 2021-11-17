@@ -11,6 +11,7 @@ New features:
 Bugfixes:
 
 Other improvements:
+- Added `purs-tidy` formatter (#23 by @thomashoneyman)
 - Added tests (#20 by @ntwilson)
 - Added quick start (#22 by @maxdeviant)
 
