@@ -4,7 +4,6 @@
 [![Release](https://img.shields.io/github/release/purescript-contrib/purescript-now.svg)](https://github.com/purescript-contrib/purescript-now/releases)
 [![Pursuit](https://pursuit.purescript.org/packages/purescript-now/badge)](https://pursuit.purescript.org/packages/purescript-now)
 [![Maintainer: garyb](https://img.shields.io/badge/maintainer-garyb-teal.svg)](https://github.com/garyb)
-[![Maintainer: thomashoneyman](https://img.shields.io/badge/maintainer-thomashoneyman-teal.svg)](https://github.com/thomashoneyman)
 
 Effect type and function for accessing the current machine's date and time.
 
