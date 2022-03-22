@@ -8,7 +8,6 @@
   , "exceptions"
   , "node-process"
   , "prelude"
-  , "psci-support"
   , "transformers"
   ]
 , packages = ./packages.dhall

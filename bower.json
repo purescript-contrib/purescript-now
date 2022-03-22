@@ -16,16 +16,16 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-datetime": "^5.0.0",
-    "purescript-effect": "^3.0.0"
+    "purescript-datetime": "master",
+    "purescript-effect": "master"
   },
   "devDependencies": {
-    "purescript-assert": "^5.0.0",
-    "purescript-console": "^5.0.0",
-    "purescript-either": "^5.0.0",
-    "purescript-exceptions": "^5.0.0",
-    "purescript-node-process": "^8.0.0",
-    "purescript-prelude": "^5.0.0",
-    "purescript-transformers": "^5.0.0" 
+    "purescript-assert": "master",
+    "purescript-console": "master",
+    "purescript-either": "master",
+    "purescript-exceptions": "master",
+    "purescript-node-process": "master",
+    "purescript-prelude": "master",
+    "purescript-transformers": "master"
   }
 }

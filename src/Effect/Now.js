@@ -1,10 +1,8 @@
-"use strict";
-
-exports.now = function () {
+export function now() {
   return Date.now();
-};
+}
 
-exports.getTimezoneOffset = function () {
+export function getTimezoneOffset() {
   var n = new Date(Date.now());
   return n.getTimezoneOffset();
-};
+}
