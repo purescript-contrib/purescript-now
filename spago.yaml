@@ -1,0 +1,24 @@
+package:
+  name: now
+  description: PureScript library for reading the current date and time value
+  publish:
+    license: MIT
+    version: 7.0.0
+    location:
+      githubOwner: purescript-contrib
+      githubRepo: purescript-now
+  dependencies:
+    - datetime: ">=6.1.0 <7.0.0"
+    - effect: ">=4.0.0 <5.0.0"
+    - prelude: ">=6.0.1 <7.0.0"
+  test:
+    main: Test.Main
+    dependencies:
+      - assert
+      - console
+      - effect
+      - either
+      - exceptions
+      - node-process
+      - transformers
+workspace: {}

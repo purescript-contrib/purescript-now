@@ -10,7 +10,7 @@ import Effect (Effect)
 import Effect.Class.Console (log, logShow)
 import Effect.Exception (throw)
 import Effect.Now (getTimezoneOffset, now, nowDate, nowTime)
-import Node.Process (exit)
+import Node.Process (exit')
 import Test.Assert (assert, assert')
 
 type FailedTestCount = Int
@@ -58,5 +58,4 @@ main = do
     canGetTheCurrentTime
     offsetSeemsSensible
 
-  exit failedTests
-
+  exit' failedTests
