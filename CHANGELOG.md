@@ -11,6 +11,16 @@ New features:
 Bugfixes:
 
 Other improvements:
+
+## [v6.0.1](https://github.com/purescript-contrib/purescript-now/releases/tag/v6.0.1) - 2026-10-11
+
+Breaking changes:
+
+New features:
+
+Bugfixes:
+
+Other improvements:
 - Migrate to registry-backed Spago 1.0 and update repository tooling.
 
 ## [v6.0.0](https://github.com/purescript-contrib/purescript-now/releases/tag/v6.0.0) - 2022-04-27
